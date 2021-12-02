@@ -155,7 +155,7 @@ h1 {
 
 .line {
   transition: all 1s ease-in-out;
-  background: linear-gradient(to right, #6A1B9A 50%, white 50%);
+  background: linear-gradient(to right, #89c5d6 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
 }
