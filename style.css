@@ -146,7 +146,7 @@ h1 {
 }
 
 .personal-data {
-  left: calc(50% - 175px);
+  left: calc(50% - 180px);
 }
 
 .finish-step, .contact {
@@ -231,7 +231,7 @@ input::placeholder {
   position: absolute;
   border-bottom: 1px solid #25a3ff;
   padding: 3px 0;
-  width: 75%;
+  width: 300px;
   transition: width .6s ease-in-out;
 }
 

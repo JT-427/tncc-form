@@ -9,7 +9,7 @@ $('.firstNext').on('click', (e) => {
   
    $(steps[1]).find('.line').addClass('line-active');
    $('.personal-data').css('left', '-4000px');
-   $('.contact').css('left', 'calc(50% - 175px)');
+   $('.contact').css('left', 'calc(50% - 180px)');
 });
 
 // Second step
@@ -20,14 +20,14 @@ $('.secondNext').on('click', (e) => {
   
   $(steps[2]).find('.line').addClass('line-active');
   $('.contact').css('left', '-4000px');
-  $('.finish-step').css('left', 'calc(50% - 175px)');
+  $('.finish-step').css('left', 'calc(50% - 180px)');
 });
 
 $('.firstPrev').on('click', (e) => {
   $(steps[1]).find('.number').removeClass('active');
   $(steps[1]).find('.line').removeClass('line-active');
   $('.contact').css('left', '4000px');
-  $('.personal-data').css('left', 'calc(50% - 175px)');
+  $('.personal-data').css('left', 'calc(50% - 180px)');
 });
 
 // Last step
@@ -35,5 +35,5 @@ $('.secondPrev').on('click', (e) => {
   $(steps[2]).find('.number').removeClass('active');
   $(steps[2]).find('.line').removeClass('line-active');
   $('.finish-step').css('left', '4000px');
-  $('.contact').css('left', 'calc(50% - 175px)')
+  $('.contact').css('left', 'calc(50% - 180px)')
 });
