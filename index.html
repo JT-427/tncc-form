@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Register form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="step-bar">
+  <ul>
+    <li>
+      <div class="number active">1</div>
+      <div class="text">基本資料</div>
+    </li>
+    <li> 
+      <div class="number">2</div>
+      <div class="text">聯絡方式</div>
+      <div class="line"></div>
+    </li>
+    <li> 
+      <div class="number">3</div>
+      <div class="text">我們想了解～</div>
+      <div class="line"></div>
+    </li>
+  </ul>
+</div>
+<h1>ＴＮＣＣ</h1>
+<form>
+  <div class="personal-data register-form">
+    <h2>基本資料</h2>
+    <div class="inputContainer">
+      <input class="inputField" type="text" name="name" required autofocus />
+      <label class="inputLabel">姓名</label>
+      <div class="inputProgress"></div>
+    </div>
+    <div class="inputContainer">
+      <input class="inputField" type="date" name="birthday" value="2010-01-01" max="2010-12-31" required />
+      <label class="inputLabel">生日</label>
+      <div class="inputProgress"></div>
+    </div>
+    <div class="inputContainer">
+      <input class="inputField" type="text" name="gender" required />
+      <label class="inputLabel">性別</label>
+      <div class="inputProgress"></div>
+    </div>
+    <div class="inputContainer">
+      <input class="inputField" type="text" name="address" required />
+      <label class="inputLabel">住家地址</label>
+      <div class="inputProgress"></div>
+    </div>
+    <div class="button firstNext">Next</div>
+  </div>
+
+  <div class="finish-step register-form">
+    <h2>我們想了解～</h2>
+    <div class="inputContainer">
+      <input class="inputField" type="text" name="referrer" required />
+      <label class="inputLabel">介紹人</label>
+      <div class="inputProgress"></div>
+    </div>
+    <div class="inputContainer">
+      <input class="inputField" type="text" name="relationship" required />
+      <label class="inputLabel">與介紹人的關係</label>
+      <div class="inputProgress"></div>
+    </div>
+    <div class="inputContainer">
+      <input class="inputField" type="text" name="reason" required />
+      <label class="inputLabel">今天來本教會的原因</label>
+      <div class="inputProgress"></div>
+    </div>
+    <label class="accept-conditions" for="accept">Accept <a href="#"> terms & conditions</a>
+      <input name="accept" type="checkbox"/>
+    </label>
+
+    <div class="button secondPrev">Back</div>
+    <div class="button ">Register</div>
+  </div>
+
+  <div class="contact register-form">
+    <h2>聯絡方式</h2>
+    <div class="inputContainer">
+      <input class="inputField" type="text" name="telephone" required />
+      <label class="inputLabel">電話</label>
+      <div class="inputProgress"></div>
+    </div>
+    <div class="inputContainer">
+      <input class="inputField" type="text" name="cellphone" required />
+      <label class="inputLabel">手機</label>
+      <div class="inputProgress"></div>
+    </div>
+    <div class="inputContainer">
+      <input class="inputField" type="text" name="email" required />
+      <label class="inputLabel">Email</label>
+      <div class="inputProgress"></div>
+    </div>
+
+    <div class="button firstPrev">Back</div>
+    <div class="button secondNext">Next</div>
+  </div>
+</form>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
