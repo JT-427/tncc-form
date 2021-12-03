@@ -65,6 +65,7 @@ html, body {
   background: #fff;
   padding: 20px 30px;
   width: 300px;
+  /* height: 50%; */
   text-align: center;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
@@ -147,11 +148,16 @@ h1 {
 }
 
 .personal-data {
-  left: calc(50% - 180px);
+  margin: auto;
+  left: 0;
+  right: 0;
+  /* top: 0;
+  bottom: 0; */
+  /* left: calc(50% - 180px); */
 }
 
 .finish-step, .contact {
-  left: 1400px;
+  left: 100%;
 }
 
 .line {
@@ -194,7 +200,7 @@ input::placeholder {
 .inputContainer {
   position: relative;
   opacity: 1;
-  width: 350px;
+  width: 300px;
   margin-top: 25px;
   transition: opacity .3s ease-in-out;
 }

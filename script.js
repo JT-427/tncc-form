@@ -8,8 +8,10 @@ $('.firstNext').on('click', (e) => {
    }, 1000);
   
    $(steps[1]).find('.line').addClass('line-active');
-   $('.personal-data').css('left', '-4000px');
-   $('.contact').css('left', 'calc(50% - 180px)');
+   $('.personal-data').css('left', '-150%');
+   $('.contact').css('margin', 'auto');
+   $('.contact').css('left', 0);
+   $('.contact').css('right', 0);
 });
 
 // Second step
@@ -19,21 +21,27 @@ $('.secondNext').on('click', (e) => {
   }, 1000);
   
   $(steps[2]).find('.line').addClass('line-active');
-  $('.contact').css('left', '-4000px');
-  $('.finish-step').css('left', 'calc(50% - 180px)');
+  $('.contact').css('left', '-150%');
+  $('.finish-step').css('margin', 'auto');
+  $('.finish-step').css('left', 0);
+  $('.finish-step').css('right', 0);
 });
 
 $('.firstPrev').on('click', (e) => {
   $(steps[1]).find('.number').removeClass('active');
   $(steps[1]).find('.line').removeClass('line-active');
-  $('.contact').css('left', '4000px');
-  $('.personal-data').css('left', 'calc(50% - 180px)');
+  $('.contact').css('left', '150%');
+  $('.personal-data').css('margin', 'auto');
+  $('.personal-data').css('left', 0);
+  $('.personal-data').css('right', 0);
 });
 
 // Last step
 $('.secondPrev').on('click', (e) => {
   $(steps[2]).find('.number').removeClass('active');
   $(steps[2]).find('.line').removeClass('line-active');
-  $('.finish-step').css('left', '4000px');
-  $('.contact').css('left', 'calc(50% - 180px)')
+  $('.finish-step').css('left', '150%');
+  $('.contact').css('margin', 'auto');
+  $('.contact').css('left', 0);
+  $('.contact').css('right', 0);
 });
