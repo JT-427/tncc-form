@@ -15,6 +15,7 @@ html, body {
   background: -moz-linear-gradient(bottom right, #00695C, #6A1B9A); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #00695C, #6A1B9A); /* Standard syntax */
   overflow-x: hidden;
+  position:relative;
 }
 
 .step-bar {
