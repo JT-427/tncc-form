@@ -11,7 +11,7 @@ $('.firstNext').on('click', (e) => {
    $('.personal-data').css('left', '-200%');
    $('.contact').css('margin', 'auto');
    $('.contact').css('left', 0);
-   $('.contact').css('right', 0);
+  //  $('.contact').css('right', 0);
 });
 
 // Second step
@@ -24,7 +24,7 @@ $('.secondNext').on('click', (e) => {
   $('.contact').css('left', '-200%');
   $('.finish-step').css('margin', 'auto');
   $('.finish-step').css('left', 0);
-  $('.finish-step').css('right', 0);
+  // $('.finish-step').css('right', 0);
 });
 
 $('.firstPrev').on('click', (e) => {
@@ -33,7 +33,7 @@ $('.firstPrev').on('click', (e) => {
   $('.contact').css('left', '200%');
   $('.personal-data').css('margin', 'auto');
   $('.personal-data').css('left', 0);
-  $('.personal-data').css('right', 0);
+  // $('.personal-data').css('right', 0);
 });
 
 // Last step
