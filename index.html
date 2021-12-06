@@ -17,7 +17,7 @@
     </li>
     <li> 
       <div class="number">2</div>
-      <div class="text">聯絡方式</div>
+      <div class="text">需要一個標題</div>
       <div class="line"></div>
     </li>
     <li> 
@@ -37,14 +37,28 @@
       <div class="inputProgress"></div>
     </div>
     <div class="inputContainer">
-      <input class="inputField" type="date" name="birthday" value="2010-01-01" max="2010-12-31" required />
-      <label class="inputLabel">生日</label>
+      <input class="inputField" type="text" name="gender" list="genderl" required />
+      <label class="inputLabel">性別</label>
+      <datalist id="genderl">
+        <option value="男">
+        <option value="女">
+      </datalist>
       <div class="inputProgress"></div>
     </div>
     <div class="inputContainer">
-      <input class="inputField" type="text" name="gender" required />
-      <label class="inputLabel">性別</label>
+      <input class="inputField" type="date" name="birthday" value="2010-01-01" max="2010-12-31" required />
+      <label class="inputLabel">生日</label>
+    <div class="inputProgress"></div>
+      <div class="inputContainer">
+      <input class="inputField" type="text" name="phone" required />
+      <label class="inputLabel">電話/手機</label>
       <div class="inputProgress"></div>
+    </div>
+    <div class="inputContainer">
+      <input class="inputField" type="text" name="email" required />
+      <label class="inputLabel">Email</label>
+      <div class="inputProgress"></div>
+    </div>
     </div>
     <div class="inputContainer">
       <input class="inputField" type="text" name="address" required />
@@ -55,7 +69,7 @@
   </div>
 
   <div class="finish-step register-form">
-    <h2>我們想了解～</h2>
+    <h2>歡迎你～</h2>
     <div class="inputContainer">
       <input class="inputField" type="text" name="referrer" required />
       <label class="inputLabel">介紹人</label>
@@ -75,23 +89,76 @@
   </div>
 
   <div class="contact register-form">
-    <h2>聯絡方式</h2>
+    <h2>需要一個標題</h2>
     <div class="inputContainer">
-      <input class="inputField" type="text" name="telephone" required />
-      <label class="inputLabel">電話</label>
+      <input class="inputField" type="text" name="referrer" required />
+      <label class="inputLabel">介紹人</label>
       <div class="inputProgress"></div>
     </div>
     <div class="inputContainer">
-      <input class="inputField" type="text" name="cellphone" required />
-      <label class="inputLabel">手機</label>
+      <input class="inputField" type="text" name="relationship" required />
+      <label class="inputLabel">與介紹人的關係</label>
       <div class="inputProgress"></div>
     </div>
     <div class="inputContainer">
-      <input class="inputField" type="text" name="email" required />
-      <label class="inputLabel">Email</label>
+      <input class="inputField" type="text" name="reason" required />
+      <label class="inputLabel">今天來今天來本教會的原因</label>
       <div class="inputProgress"></div>
     </div>
+    <br/>
+    <div style="text-align: left;">
+      <labe>我願意：</label>
+      <div class="checkboxinputdiv">
+        <input
+          type="checkbox"
+          value="我想進一步了解信仰"
+          id="checkbox1"
+          name="checkbox1"
+          />
+        <label for="checkbox1">
+          我想進一步了解信仰
+        </label>
+      </div>
+      <div class="checkboxinputdiv">
+        <input
+          type="checkbox"
+          value="有輔導人員關懷，請與我聯絡"
+          id="checkbox2"
+          name="checkbox2"
+          />
+        <label for="checkbox2">
+          有輔導人員關懷，請與我聯絡
+        </label>
+      </div>
+      <div class="checkboxinputdiv">
+        <input
+          type="checkbox"
+          value="接受耶穌成為我的救主和生命的主"
+          id="checkbox3"
+          name="checkbox3"
+          />
+        <label for="checkbox3">
+          接受耶穌成為我的救主和生命的主
+        </label>
+      </div>
+      <div class="checkboxinputdiv">
+        <input
+          type="checkbox"
+          value="參加小組聚會"
+          id="checkbox4"
+          name="checkbox4"
+          />
+        <label for="checkbox4">
+          參加小組聚會
+        </label>
+      </div>
 
+    </div>
+    <div class="inputContainer">
+      <input class="inputField" type="text" name="church" required />
+      <label class="inputLabel">我已是基督徒，我的教會是...</label>
+      <div class="inputProgress"></div>
+    </div>
     <div class="button firstPrev">Back</div>
     <div class="button secondNext">Next</div>
   </div>
