@@ -339,3 +339,8 @@ input::placeholder {
 .control--radio input:disabled ~ .control__indicator:after {
   background: #7b7b7b;
 }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
