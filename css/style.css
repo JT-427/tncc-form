@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+  font-family: 'Roboto';
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  text-align: center;
+  height: 100%;
+  background: #D09EA6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #00659C, #6A1B9A); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #00659C, #6A1B9A); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #00695C, #6A1B9A); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #00695C, #6A1B9A); /* Standard syntax */
+  overflow-x: hidden;
+  position:relative;
+}
+
+.step-bar {
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.8em;
+  margin-top: 40px;
+}
+
+.step-bar li{
+  display: inline-block;
+  position: relative;
+  margin: 0px 30px; 
+  width: 120px;
+}
+
+.step-bar .number{
+  transition: background-color 0.1s linear, color 0.1s linear;
+  display: inline-block;
+  position: relative;
+  color: #777;
+  background-color: #fff; 
+  width: 20px;
+  padding: 8px 5px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.step-bar .line {
+  background-color: #fff;
+  width: 180px;
+  height: 5px;
+  position: absolute;
+  top: 15px;
+  right: 60px;
+  z-index: 0;
+}
+
+.step-bar .active {
+  background-color: #1b819a;
+  color: #fff;
+}
+
+.register-form {
+  display: inline-block;
+  background: #fff;
+  padding: 20px 30px;
+  width: 300px;
+  /* height: 50%; */
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.3);
+  border-radius: 3px;
+  position: relative;
+}
+
+.error {
+  border: 1px solid #E57373;
+  background-color: #FFEBEE;
+}
+
+.error-text {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 0.7em;
+  color: #E57373;
+}
+
+h1 {
+  margin: 75px 0;
+  display: block;
+  color: #fff;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.register-form h2 {
+  font-size: 1em;
+  color: rgb(39, 39, 39);
+  font-weight: bolder;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.register-form input {
+  padding: 15px; 
+  margin: 5px 0;
+  width: 260px;
+}
+
+/* .register-form input::placeholder {
+  color: #aaa;
+} */
+
+.register-form input.error::placeholder {
+  color: #555;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #1b819a;
+  color: #fff;
+  margin: 25px 0  10px 0;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.button:hover {
+  background-color: #00897B;
+}
+
+.disabled {
+  background-color: #aaa; 
+}
+
+.disabled:hover {
+  background-color: #aaa; 
+  cursor: default
+}
+
+.personal-data, .finish-step, .contact {
+  transition: 1s all ease-in-out;
+  display: inline-block;
+  position: absolute;
+}
+
+.personal-data {
+  margin: auto;
+  left: 0;
+  right: 0;
+  /* top: 0;
+  bottom: 0; */
+  /* left: calc(50% - 180px); */
+}
+
+.finish-step, .contact {
+  left: 100%;
+}
+
+.line {
+  transition: all 1s ease-in-out;
+  background: linear-gradient(to right, #89c5d6 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.line-active {
+  background-position: left bottom;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 0.8em;
+  padding-left: 5px;
+  color: #9e9e9e;
+}
+
+/* input[type=checkbox]{
+  display: none;
+} */
+.checkboxinputdiv {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: flex-start;
+  align-items: center;
+}
+/* .checkboxinputdiv input[type=checkbox]{
+  padding: 15px;
+  margin: 5px 0;
+  width: 20px; 
+} */
+.accept-conditions {
+  margin-top: 20px;
+}
+
+input::placeholder { 
+  color: black;
+}
+
+
+@media(max-width: 600px) {
+  .step-bar {
+    display: none;
+  }
+}
+.inputContainer {
+  position: relative;
+  opacity: 1;
+  width: 300px;
+  margin-top: 25px;
+  transition: opacity .3s ease-in-out;
+}
+
+.inputContainer input {
+  width: 100%;
+  padding: 0 5px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: 0;
+  background: transparent;
+  box-shadow:none;
+}
+
+.inputLabel {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 5px;
+  transition: .2s ease-in-out;
+}
+
+.inputContainer input:valid + .inputLabel {
+  top: -15px;
+  font-size: 11px;
+  font-weight: normal;
+  color: #9e9e9e;
+}
+
+.inputProgress {
+  position: absolute;
+  border-bottom: 1px solid #25a3ff;
+  padding: 3px 0;
+  width: 300px;
+  transition: width .6s ease-in-out;
+}
+
+.wrong .inputProgress {
+  border-color: #ff2d26;
+}
+
+/* .control-group {
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  text-align: left;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 200px;
+  height: 210px;
+  margin: 10px;
+} */
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+.control input:checked ~ .control__indicator {
+  background: #2aa1c0;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #0e647d;
+}
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+.control--radio .control__indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
